@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5DDED21C2AA21EFD006DB5E9 /* ParallaxCarouselApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDED21B2AA21EFD006DB5E9 /* ParallaxCarouselApp.swift */; };
-		5DDED21E2AA21EFD006DB5E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDED21D2AA21EFD006DB5E9 /* ContentView.swift */; };
 		5DDED2202AA21EFE006DB5E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DDED21F2AA21EFE006DB5E9 /* Assets.xcassets */; };
 		5DDED2232AA21EFE006DB5E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DDED2222AA21EFE006DB5E9 /* Preview Assets.xcassets */; };
+		5DDED2372AA221C3006DB5E9 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDED2312AA221C3006DB5E9 /* Card.swift */; };
+		5DDED2382AA221C3006DB5E9 /* ParallaxCarouselApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDED2332AA221C3006DB5E9 /* ParallaxCarouselApp.swift */; };
+		5DDED2392AA221C3006DB5E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDED2342AA221C3006DB5E9 /* ContentView.swift */; };
+		5DDED23A2AA221C3006DB5E9 /* ParallaxCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDED2362AA221C3006DB5E9 /* ParallaxCarouselView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5DDED2182AA21EFD006DB5E9 /* ParallaxCarousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallaxCarousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DDED21B2AA21EFD006DB5E9 /* ParallaxCarouselApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxCarouselApp.swift; sourceTree = "<group>"; };
-		5DDED21D2AA21EFD006DB5E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5DDED21F2AA21EFE006DB5E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DDED2222AA21EFE006DB5E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5DDED2312AA221C3006DB5E9 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		5DDED2332AA221C3006DB5E9 /* ParallaxCarouselApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxCarouselApp.swift; sourceTree = "<group>"; };
+		5DDED2342AA221C3006DB5E9 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5DDED2362AA221C3006DB5E9 /* ParallaxCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxCarouselView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,9 @@
 		5DDED21A2AA21EFD006DB5E9 /* ParallaxCarousel */ = {
 			isa = PBXGroup;
 			children = (
-				5DDED21B2AA21EFD006DB5E9 /* ParallaxCarouselApp.swift */,
-				5DDED21D2AA21EFD006DB5E9 /* ContentView.swift */,
+				5DDED2302AA221C3006DB5E9 /* Model */,
+				5DDED2322AA221C3006DB5E9 /* System */,
+				5DDED2352AA221C3006DB5E9 /* View */,
 				5DDED21F2AA21EFE006DB5E9 /* Assets.xcassets */,
 				5DDED2212AA21EFE006DB5E9 /* Preview Content */,
 			);
@@ -65,6 +70,31 @@
 				5DDED2222AA21EFE006DB5E9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5DDED2302AA221C3006DB5E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5DDED2312AA221C3006DB5E9 /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5DDED2322AA221C3006DB5E9 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				5DDED2332AA221C3006DB5E9 /* ParallaxCarouselApp.swift */,
+				5DDED2342AA221C3006DB5E9 /* ContentView.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		5DDED2352AA221C3006DB5E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5DDED2362AA221C3006DB5E9 /* ParallaxCarouselView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DDED21E2AA21EFD006DB5E9 /* ContentView.swift in Sources */,
-				5DDED21C2AA21EFD006DB5E9 /* ParallaxCarouselApp.swift in Sources */,
+				5DDED2382AA221C3006DB5E9 /* ParallaxCarouselApp.swift in Sources */,
+				5DDED2372AA221C3006DB5E9 /* Card.swift in Sources */,
+				5DDED2392AA221C3006DB5E9 /* ContentView.swift in Sources */,
+				5DDED23A2AA221C3006DB5E9 /* ParallaxCarouselView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
